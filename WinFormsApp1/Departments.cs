@@ -86,7 +86,7 @@ namespace WinFormsApp1
             }
 
         }
-        
+
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -107,8 +107,8 @@ namespace WinFormsApp1
         {
 
         }
-       
-        
+
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -119,7 +119,7 @@ namespace WinFormsApp1
         {
 
         }
-        
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -190,7 +190,7 @@ namespace WinFormsApp1
 
             }
         }
-       
+
 
         private void EmpLbl_Click(object sender, EventArgs e)
         {
@@ -213,5 +213,6 @@ namespace WinFormsApp1
             this.Hide();
         }
 
-        
+
     }
+}
