@@ -113,7 +113,7 @@ namespace WinFormsApp1
             }
             else
             {
-                key = Convert.ToInt32(DepList.SelectedRows[0].Cells[0].Value.ToString());
+                key = Convert.ToInt32(DepList.SelectedRows[0].Cells[1].Value.ToString());
             }
 
         }
