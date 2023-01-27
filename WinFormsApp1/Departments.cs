@@ -100,5 +100,10 @@ namespace WinFormsApp1
         {
 
         }
+
+        private void DepList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
