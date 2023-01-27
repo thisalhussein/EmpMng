@@ -149,6 +149,7 @@
             this.EmpCb.Name = "EmpCb";
             this.EmpCb.Size = new System.Drawing.Size(291, 36);
             this.EmpCb.TabIndex = 37;
+            this.EmpCb.SelectedIndexChanged += new System.EventHandler(this.EmpCb_SelectedIndexChanged);
             // 
             // panel2
             // 
