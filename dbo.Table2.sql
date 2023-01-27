@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Table]
+﻿CREATE TABLE [dbo].[SalaryTbl]
 (
 	[SCode] INT NOT NULL PRIMARY KEY, 
     [Employee] INT NOT NULL, 
