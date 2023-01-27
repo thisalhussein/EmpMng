@@ -35,6 +35,31 @@ namespace WinFormsApp1
             DepList.DataSource = Con.GetData(Query);
         }
 
+        private void AddBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (DepNameTb.Text == "")
+                {
+                    MessageBox.Show("Missing Data!!!");
+                }
+                else
+                {
+                    String Dep = DepNameTb.Text;
+                    string Query = "insert into DepartmentTbl values('{0}')";
+                    Query = string.Format(Query, DepNameTb.Text);
+                    Con.SetData(Query);
+                    ShowDepartments();
+                    MessageBox.Show("Department Added!!!");
+                    DepNameTb.Text = "";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -47,7 +72,7 @@ namespace WinFormsApp1
                 else
                 {
                     String Dep = DepNameTb.Text;
-                    string Query = "insert into DepartmentTb1 values('{0}')";
+                    string Query = "insert into DepartmentTbl values('{0}')";
                     Query = string.Format(Query, DepNameTb.Text);
                     Con.SetData(Query);
                     ShowDepartments();
@@ -151,7 +176,7 @@ namespace WinFormsApp1
                     else
                     {
                         string Dep = DepNameTb.Text;
-                        string Query = "Delete from DepartmentTb1 where DepId ={ 0} ";
+                        string Query = "Delete from DepartmentTbl where DepId ={ 0} ";
                         Query = string.Format(Query, key);
                         Con.SetData(Query);
                         ShowDepartments();
@@ -164,6 +189,13 @@ namespace WinFormsApp1
                     MessageBox.Show(Ex.Message);
                 }
             }
+        }
+
+        private void EmpLbl_Click(object sender, EventArgs e)
+        {
+            Employees obj = new Employees();
+            obj.Show();
+            this.Hide();
         }
     }
 }
