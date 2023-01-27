@@ -6,5 +6,10 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+
+        private void ResetLbl_Click(object sender, EventArgs e)
+        {
+            UNameTb.Text = "";
+        }
     }
 }

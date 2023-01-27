@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.UNameTb = new System.Windows.Forms.TextBox();
+            this.PasswordTb = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.LoginBtn = new System.Windows.Forms.Button();
+            this.ResetLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,19 +50,19 @@
             this.panel1.Size = new System.Drawing.Size(186, 426);
             this.panel1.TabIndex = 0;
             // 
-            // textBox1
+            // UNameTb
             // 
-            this.textBox1.Location = new System.Drawing.Point(234, 188);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(291, 27);
-            this.textBox1.TabIndex = 1;
+            this.UNameTb.Location = new System.Drawing.Point(234, 188);
+            this.UNameTb.Name = "UNameTb";
+            this.UNameTb.Size = new System.Drawing.Size(291, 27);
+            this.UNameTb.TabIndex = 1;
             // 
-            // textBox2
+            // PasswordTb
             // 
-            this.textBox2.Location = new System.Drawing.Point(234, 290);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(291, 27);
-            this.textBox2.TabIndex = 2;
+            this.PasswordTb.Location = new System.Drawing.Point(234, 290);
+            this.PasswordTb.Name = "PasswordTb";
+            this.PasswordTb.Size = new System.Drawing.Size(291, 27);
+            this.PasswordTb.TabIndex = 2;
             // 
             // label1
             // 
@@ -110,29 +110,30 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Password";
             // 
-            // button1
+            // LoginBtn
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.button1.Location = new System.Drawing.Point(304, 337);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 50);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "LOGIN";
-            this.button1.UseVisualStyleBackColor = true;
+            this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LoginBtn.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LoginBtn.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.LoginBtn.Location = new System.Drawing.Point(304, 337);
+            this.LoginBtn.Name = "LoginBtn";
+            this.LoginBtn.Size = new System.Drawing.Size(153, 50);
+            this.LoginBtn.TabIndex = 7;
+            this.LoginBtn.Text = "LOGIN";
+            this.LoginBtn.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // ResetLbl
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Microsoft JhengHei", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label4.Location = new System.Drawing.Point(349, 390);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 23);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Reset";
+            this.ResetLbl.AutoSize = true;
+            this.ResetLbl.BackColor = System.Drawing.Color.White;
+            this.ResetLbl.Font = new System.Drawing.Font("Microsoft JhengHei", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.ResetLbl.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.ResetLbl.Location = new System.Drawing.Point(349, 390);
+            this.ResetLbl.Name = "ResetLbl";
+            this.ResetLbl.Size = new System.Drawing.Size(58, 23);
+            this.ResetLbl.TabIndex = 8;
+            this.ResetLbl.Text = "Reset";
+            this.ResetLbl.Click += new System.EventHandler(this.ResetLbl_Click);
             // 
             // Form1
             // 
@@ -140,14 +141,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(589, 426);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ResetLbl);
+            this.Controls.Add(this.LoginBtn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.PasswordTb);
+            this.Controls.Add(this.UNameTb);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
@@ -162,13 +163,13 @@
         #endregion
 
         private Panel panel1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox UNameTb;
+        private TextBox PasswordTb;
         private Label label1;
         private PictureBox pictureBox1;
         private Label label2;
         private Label label3;
-        private Button button1;
-        private Label label4;
+        private Button LoginBtn;
+        private Label ResetLbl;
     }
 }
