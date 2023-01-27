@@ -25,6 +25,10 @@ namespace WinFormsApp1
                 Obj.Show();
                 this.Hide();
             }
+            else
+            {
+                MessageBox.Show("Wrong UserName Or Password !");
+            }
         }
     }
 }

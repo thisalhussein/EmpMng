@@ -333,6 +333,7 @@
             this.label10.Size = new System.Drawing.Size(112, 22);
             this.label10.TabIndex = 30;
             this.label10.Text = "Department";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // pictureBox3
             // 
