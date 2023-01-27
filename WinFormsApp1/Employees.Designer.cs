@@ -119,9 +119,9 @@
             this.label5.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label5.Location = new System.Drawing.Point(38, 356);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 22);
+            this.label5.Size = new System.Drawing.Size(197, 22);
             this.label5.TabIndex = 11;
-            this.label5.Text = "User Name";
+            this.label5.Text = "Employee Department";
             // 
             // textBox3
             // 
