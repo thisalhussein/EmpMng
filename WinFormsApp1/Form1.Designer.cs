@@ -121,6 +121,7 @@
             this.LoginBtn.TabIndex = 7;
             this.LoginBtn.Text = "LOGIN";
             this.LoginBtn.UseVisualStyleBackColor = true;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // ResetLbl
             // 

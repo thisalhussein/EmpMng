@@ -12,5 +12,13 @@ namespace WinFormsApp1
             UNameTb.Text = "";
             PasswordTb = "";
         }
+
+        private void LoginBtn_Click(object sender, EventArgs e)
+        {
+            if(UNameTb.Text == "" || PasswordTb.Text == "")
+            {
+                MessageBox.Show("Missing Data !")
+            }
+        }
     }
 }
