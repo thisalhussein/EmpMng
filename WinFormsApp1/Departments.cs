@@ -35,31 +35,7 @@ namespace WinFormsApp1
             DepList.DataSource = Con.GetData(Query);
         }
 
-        private void AddBtn_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (DepNameTb.Text == "")
-                {
-                    MessageBox.Show("Missing Data!!!");
-                }
-                else
-                {
-                    String Dep = DepNameTb.Text;
-                    string Query = "insert into DepartmentTb1 values('{0}')";
-                    Query = string.Format(Query, DepNameTb.Text);
-                    Con.SetData(Query);
-                    ShowDepartments();
-                    MessageBox.Show("Department Added!!!");
-                    DepNameTb.Text = "";
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
 
-        }
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -127,6 +103,7 @@ namespace WinFormsApp1
 
         }
 
+        int key = 0;
         private void DepList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
