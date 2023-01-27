@@ -75,5 +75,32 @@ namespace WinFormsApp1
         {
             GetSalary();
         }
+
+        private void AddBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (EmpCb.SelectedIndex == -1 || DaysTb.Text == "" || PeriodTb.Text == "")
+                {
+                    MessageBox.Show("Missing Data!!!");
+                }
+                else
+                {
+                    Period = PeriodTb.Value.Date.Month.ToString() + "-" + PeriodTb.Value.Date.Year.ToString();
+                    int Amount = DSal * Convert.ToInt32(DaysTb.Text);
+                    int Days = Convert.ToInt32(DaysTb.Text);
+                    string Query = "Update SalaryTb1 values({0},{1},'{2}',{3},'{4}',)";
+                    Query = string.Format(Query, EmpCb.SelectedValue.ToString(), Days, Period, Amount, DateTime.Today.Date);
+                    Con.SetData(Query);
+                    ShowSalary();
+                    MessageBox.Show("Salary  Paid!!!");
+                    DaysTb.Text = "";
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
     }
 }
