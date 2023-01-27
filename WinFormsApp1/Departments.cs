@@ -246,5 +246,10 @@ namespace WinFormsApp1
             obj.Show();
             this.Hide();
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
