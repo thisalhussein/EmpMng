@@ -17,7 +17,11 @@ namespace WinFormsApp1
         {
             if(UNameTb.Text == "" || PasswordTb.Text == "")
             {
-                MessageBox.Show("Missing Data !")
+                MessageBox.Show("Missing Data !");
+            }
+            else if(UNameTb.Text == "Admin" && PasswordTb.Text == "Password")
+            {
+
             }
         }
     }
