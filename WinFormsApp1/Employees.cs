@@ -22,8 +22,17 @@ namespace WinFormsApp1
         }
         private void ShowEmp()
         {
-            string Query = "Select * from EmployeeTbl";
-            EmployeeList.DataSource = Con.GetData(Query);
+
+            try
+            {
+                string Query = "Select * from EmployeeTb1";
+                EmployeeList.DataSource = Con.GetData(Query);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
         }
         private void Employees_Load(object sender, EventArgs e)
         {
@@ -124,7 +133,7 @@ namespace WinFormsApp1
                     string DOB = DOBTb.Value.Date.ToString();
                     string JDate = JDateTb.Value.Date.ToString();
                     int Salary = Convert.ToInt32(DailySalTb.Text);
-                    string Query = "Update EmployeeTbl set EmpName = '{0}',EmpGen='{1}',EmpDep={2},DOBTb='{3}',JDateTb='{4}',EmpSal={5} where EmpId= {6}";
+                    string Query = "Update EmployeeTbl set EmpName = '{0}',EmpGen='{1}',EmpDep={2},EmpDOB='{3}',EmpJDate='{4}',EmpSal={5} where EmpId= {6}";
                     Query = string.Format(Query, Name, Gender, Dep, DOB, JDate, Salary, key);
                     Con.SetData(Query);
                     ShowEmp();
