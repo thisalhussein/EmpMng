@@ -18,10 +18,10 @@ namespace WinFormsApp1
         {
             InitializeComponent();
             Con = new Functions();
-            ShowEmp();
-            GetDepartment()
+            ShowSalary();
+            GetEmployee()
         }
-        private void ShowEmp()
+        private void ShowSalary()
         {
 
             try
