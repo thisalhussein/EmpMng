@@ -6,5 +6,6 @@
     [EmpDep] INT NOT NULL, 
     [EmpDDB] DATE NOT NULL, 
     [EmpDate] DATE NOT NULL, 
-    [EmpSal] INT NOT NULL
+    [EmpSal] INT NOT NULL, 
+    CONSTRAINT [FK1] FOREIGN KEY ([EmpDep]) REFERENCES [DepartmentTbl]([DepId])
 )
