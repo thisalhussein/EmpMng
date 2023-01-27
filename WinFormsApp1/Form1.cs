@@ -21,7 +21,9 @@ namespace WinFormsApp1
             }
             else if(UNameTb.Text == "Admin" && PasswordTb.Text == "Password")
             {
-
+                Employees Obj = new Employees();
+                Obj.Show();
+                this.Hide();
             }
         }
     }
