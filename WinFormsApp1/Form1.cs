@@ -10,7 +10,7 @@ namespace WinFormsApp1
         private void ResetLbl_Click(object sender, EventArgs e)
         {
             UNameTb.Text = "";
-            PasswordTb = "";
+            PasswordTb.Text = "";
         }
 
         private void LoginBtn_Click(object sender, EventArgs e)
