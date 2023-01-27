@@ -168,11 +168,6 @@ namespace WinFormsApp1
             }
         }
 
-        private void SalaryLbl_Click(object sender, EventArgs e)
-        {
-            Salary Obj = new Salary();
-            Obj.Show();
-            this.Hide();
-        }
+        
     }
 }
