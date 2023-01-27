@@ -118,7 +118,7 @@ namespace WinFormsApp1
                 else
                 {
                     string Dep = DepNameTb.Text;
-                    string Query = "Update DepartmentTbl set DepName = '{0}' whereDepId = { 1}";
+                    string Query = "Update DepartmentTbl set DepName = '{0}' whereDepId = {1}";
                     Query = string.Format(Query, DepNameTb.Text, key);
                     Con.SetData(Query);
                     ShowDepartments();
@@ -143,7 +143,7 @@ namespace WinFormsApp1
                 else
                 {
                     string Dep = DepNameTb.Text;
-                    string Query = "Update DepartmentTbl set DepName = '{0}' whereDepId = { 1}";
+                    string Query = "Update DepartmentTbl set DepName = '{0}' whereDepId = {1}";
                     Query = string.Format(Query, DepNameTb.Text, key);
                     Con.SetData(Query);
                     ShowDepartments();
@@ -187,7 +187,32 @@ namespace WinFormsApp1
             }
 
         }
-
+        private void DelBtn_Click_1(object sender, EventArgs e)
+        {
+            {
+                try
+                {
+                    if (DepNameTb.Text == "")
+                    {
+                        MessageBox.Show("missing data!!!");
+                    }
+                    else
+                    {
+                        string Dep = DepNameTb.Text;
+                        string Query = "Delete from DepartmentTbl where DepId ={ 0} ";
+                        Query = string.Format(Query, key);
+                        Con.SetData(Query);
+                        ShowDepartments();
+                        MessageBox.Show("Department Deleted!!!");
+                        DepNameTb.Text = "";
+                    }
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
         private void button2_Click_1(object sender, EventArgs e)
         {
             {

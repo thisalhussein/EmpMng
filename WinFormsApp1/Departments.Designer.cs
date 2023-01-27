@@ -50,7 +50,7 @@
             this.EmpLbl = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.DepList = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
+            this.DelBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -312,20 +312,20 @@
             this.DepList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.DepList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DepList_CellContentClick);
             // 
-            // button2
+            // DelBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.IndianRed;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(119, 410);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(134, 41);
-            this.button2.TabIndex = 54;
-            this.button2.Text = "Delete";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.DelBtn.BackColor = System.Drawing.Color.IndianRed;
+            this.DelBtn.FlatAppearance.BorderSize = 0;
+            this.DelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DelBtn.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DelBtn.ForeColor = System.Drawing.Color.White;
+            this.DelBtn.Location = new System.Drawing.Point(119, 410);
+            this.DelBtn.Name = "DelBtn";
+            this.DelBtn.Size = new System.Drawing.Size(134, 41);
+            this.DelBtn.TabIndex = 54;
+            this.DelBtn.Text = "Delete";
+            this.DelBtn.UseVisualStyleBackColor = false;
+            this.DelBtn.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // Departments
             // 
@@ -333,7 +333,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1364, 774);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.DelBtn);
             this.Controls.Add(this.DepList);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.pictureBox5);
@@ -390,6 +390,6 @@
         private Label EmpLbl;
         private PictureBox pictureBox2;
         private Guna.UI2.WinForms.Guna2DataGridView DepList;
-        private Button button2;
+        private Button DelBtn;
     }
 }
