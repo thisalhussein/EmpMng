@@ -257,6 +257,8 @@ namespace WinFormsApp1
         private void LogoutLbl_Click(object sender, EventArgs e)
         {
             Form1 Obj = new Form1();
+            Obj.Show();
+            this.Hide();
         }
     }
 }
