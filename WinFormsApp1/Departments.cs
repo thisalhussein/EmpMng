@@ -107,7 +107,31 @@ namespace WinFormsApp1
         {
 
         }
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (DepNameTb.Text == "")
+                {
+                    MessageBox.Show("missing data!!!");
+                }
+                else
+                {
+                    string Dep = DepNameTb.Text;
+                    string Query = "Update DepartmentTbl set DepName = '{0}' whereDepId = { 1}";
+                    Query = string.Format(Query, DepNameTb.Text, key);
+                    Con.SetData(Query);
+                    ShowDepartments();
+                    MessageBox.Show("Department Updated!!!");
+                    DepNameTb.Text = "";
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
 
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             try
