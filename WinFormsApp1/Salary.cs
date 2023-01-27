@@ -75,7 +75,7 @@ namespace WinFormsApp1
         {
             GetSalary();
         }
-
+        int d = 1;
         private void AddBtn_Click(object sender, EventArgs e)
         {
             try
@@ -89,7 +89,7 @@ namespace WinFormsApp1
                     Period = PeriodTb.Value.Date.Month.ToString() + "-" + PeriodTb.Value.Date.Year.ToString();
                     int Amount = DSal * Convert.ToInt32(DaysTb.Text);
                     int Days = Convert.ToInt32(DaysTb.Text);
-                    string Query = "Update SalaryTbl values({0},{1},'{2}',{3},'{4}',)";
+                    string Query = "Update SalaryTbl values({0},{1},'{2}',{3},'{4}')";
                     Query = string.Format(Query, EmpCb.SelectedValue.ToString(), Days, Period, Amount, DateTime.Today.Date);
                     Con.SetData(Query);
                     ShowSalary();
@@ -101,6 +101,11 @@ namespace WinFormsApp1
             {
                 MessageBox.Show(Ex.Message);
             }
+        }
+
+        private void AmountTb_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
