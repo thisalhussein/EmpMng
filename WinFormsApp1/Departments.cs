@@ -17,7 +17,7 @@ namespace WinFormsApp1
         {
             InitializeComponent();
             Con = new Functions();
-            ListerDepartments();
+            ShowDepartments();
         }
 
         private void Departments_Load(object sender, EventArgs e)
@@ -29,7 +29,7 @@ namespace WinFormsApp1
         {
 
         }
-        private void ListerDepartments()
+        private void ShowDepartments()
         {
             string Query = "Select * from DepartmentTb1";
             DepList.DataSource = Con.GetData(Query);
