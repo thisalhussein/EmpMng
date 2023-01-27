@@ -30,5 +30,16 @@ namespace WinFormsApp1
             sda.Fill(dt);
             return dt;
         }
+        public int SetData(String Query)
+        {
+            int cnt = 0;
+            if (Con.State == ConnectionState.Closed)
+            {
+                Con.Open();
+            }
+            Cmd.CommandText = Query;
+            cnt = Cmd.ExecuteNonQuery();
+            return cnt;
+        }
     }
 }
