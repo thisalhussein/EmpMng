@@ -77,7 +77,35 @@ namespace WinFormsApp1
 
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (key == 0)
+                {
+                    MessageBox.Show("missing data!!!");
+                }
+                else
+                {
+                    string Name = EmpNameTb.Text;
+                    string Gender = GenCb.SelectedItem.ToString();
+                    int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
+                    string DOB = DOBTb.Value.ToString();
+                    string JDate = JDateTb.Value.ToString();
+                    int Salary = Convert.ToInt32(DailySalTb.Text);
+                    string Query = "Delete from EmployeeTbl where EmpId= {0}";
+                    Query = string.Format(Query, key);
+                    Con.SetData(Query);
+                    ShowEmp();
+                    MessageBox.Show("Emoloyee Deleted!!!");
+                    EmpNameTb.Text = "";
+                    DailySalTb.Text = "";
+                    GenCb.SelectedIndex = -1;
+                    DepCb.SelectedIndex = -1;
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
         }
 
         private void UpdateBtn_Click(object sender, EventArgs e)
