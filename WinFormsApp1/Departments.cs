@@ -249,15 +249,10 @@ namespace WinFormsApp1
 
         private void label11_Click(object sender, EventArgs e)
         {
-            Salary Obj = new Salary();
-            Obj.Show();
+            Salary obj = new Salary();
+            obj.Show();
             this.Hide();
         }
-        private void SalaryLbl_Click(object sender, EventArgs e)
-        {
-            Salary Obj = new Salary();
-            Obj.Show();
-            this.Hide();
-        }
+       
     }
 }

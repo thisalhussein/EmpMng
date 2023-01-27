@@ -43,7 +43,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.SalaryLbl = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -191,18 +191,18 @@
             this.pictureBox5.TabIndex = 50;
             this.pictureBox5.TabStop = false;
             // 
-            // SalaryLbl
+            // label11
             // 
-            this.SalaryLbl.AutoSize = true;
-            this.SalaryLbl.BackColor = System.Drawing.Color.White;
-            this.SalaryLbl.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.SalaryLbl.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.SalaryLbl.Location = new System.Drawing.Point(975, 153);
-            this.SalaryLbl.Name = "SalaryLbl";
-            this.SalaryLbl.Size = new System.Drawing.Size(61, 22);
-            this.SalaryLbl.TabIndex = 49;
-            this.SalaryLbl.Text = "Salary";
-            this.SalaryLbl.Click += new System.EventHandler(this.label11_Click);
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label11.Location = new System.Drawing.Point(975, 153);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(61, 22);
+            this.label11.TabIndex = 49;
+            this.label11.Text = "Salary";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // pictureBox4
             // 
@@ -338,7 +338,7 @@
             this.Controls.Add(this.DepList);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.SalaryLbl);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox3);
@@ -384,7 +384,7 @@
         private PictureBox pictureBox1;
         private Label label12;
         private PictureBox pictureBox5;
-        private Label SalaryLbl;
+        private Label label11;
         private PictureBox pictureBox4;
         private Label label10;
         private PictureBox pictureBox3;

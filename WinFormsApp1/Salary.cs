@@ -19,7 +19,7 @@ namespace WinFormsApp1
             InitializeComponent();
             Con = new Functions();
             ShowSalary();
-            GetEmployees()
+            GetEmployees();
         }
         private void GetEmployees()
         {
