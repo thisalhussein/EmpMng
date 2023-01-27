@@ -41,7 +41,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.LogoutLbl = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -169,17 +169,18 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // label12
+            // LogoutLbl
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.White;
-            this.label12.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label12.Location = new System.Drawing.Point(1209, 153);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(70, 22);
-            this.label12.TabIndex = 51;
-            this.label12.Text = "Logout";
+            this.LogoutLbl.AutoSize = true;
+            this.LogoutLbl.BackColor = System.Drawing.Color.White;
+            this.LogoutLbl.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LogoutLbl.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.LogoutLbl.Location = new System.Drawing.Point(1209, 153);
+            this.LogoutLbl.Name = "LogoutLbl";
+            this.LogoutLbl.Size = new System.Drawing.Size(70, 22);
+            this.LogoutLbl.TabIndex = 51;
+            this.LogoutLbl.Text = "Logout";
+            this.LogoutLbl.Click += new System.EventHandler(this.LogoutLbl_Click);
             // 
             // pictureBox5
             // 
@@ -336,7 +337,7 @@
             this.ClientSize = new System.Drawing.Size(1364, 774);
             this.Controls.Add(this.DelBtn);
             this.Controls.Add(this.DepList);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.LogoutLbl);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.pictureBox4);
@@ -382,7 +383,7 @@
         private Label label1;
         private Panel panel1;
         private PictureBox pictureBox1;
-        private Label label12;
+        private Label LogoutLbl;
         private PictureBox pictureBox5;
         private Label label11;
         private PictureBox pictureBox4;

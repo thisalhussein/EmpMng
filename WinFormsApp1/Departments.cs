@@ -253,6 +253,10 @@ namespace WinFormsApp1
             obj.Show();
             this.Hide();
         }
-       
+
+        private void LogoutLbl_Click(object sender, EventArgs e)
+        {
+            Form1 Obj = new Form1();
+        }
     }
 }
