@@ -16,5 +16,10 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+
+        private void Departments_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
