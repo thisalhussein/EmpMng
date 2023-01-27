@@ -36,7 +36,7 @@ namespace WinFormsApp1
         }
         private void GetDepartment()
         {
-            string Query = "Select * from DepartmentTb1";
+            string Query = "Select * from DepartmentTbl";
             DepCb.DisplayMember = Con.GetData(Query).Columns["DepName"].ToString();
             DepCb.ValueMember = Con.GetData(Query).Columns["DepId"].ToString();
             DepCb.DataSource = Con.GetData(Query);
