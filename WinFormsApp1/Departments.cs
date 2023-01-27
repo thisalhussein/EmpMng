@@ -12,6 +12,7 @@ namespace WinFormsApp1
 {
     public partial class Departments : Form
     {
+        Functions Con;
         public Departments()
         {
             InitializeComponent();
@@ -25,6 +26,11 @@ namespace WinFormsApp1
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+        private void ListerDepartments()
+        {
+            string Query = "Select * from DepartmentTb1";
+            DepList.DataSource = Con.GetData(Query);
         }
 
         private void button1_Click(object sender, EventArgs e)
