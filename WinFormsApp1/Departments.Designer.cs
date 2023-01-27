@@ -37,7 +37,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DepNmaeTb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -155,13 +155,13 @@
             this.label3.Text = "Department Name";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox1
+            // DepNmaeTb
             // 
-            this.textBox1.Location = new System.Drawing.Point(38, 260);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(291, 34);
-            this.textBox1.TabIndex = 28;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.DepNmaeTb.Location = new System.Drawing.Point(38, 260);
+            this.DepNmaeTb.Name = "DepNmaeTb";
+            this.DepNmaeTb.Size = new System.Drawing.Size(291, 34);
+            this.DepNmaeTb.TabIndex = 28;
+            this.DepNmaeTb.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -318,7 +318,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.DepNmaeTb);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -348,7 +348,7 @@
         private DataGridView dataGridView1;
         private Panel panel2;
         private Label label3;
-        private TextBox textBox1;
+        private TextBox DepNmaeTb;
         private Label label2;
         private Label label1;
         private Panel panel1;
