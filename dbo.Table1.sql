@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Table]
+﻿CREATE TABLE [dbo].[EmployeeTbl]
 (
 	[EmpId] INT NOT NULL PRIMARY KEY, 
     [EmpName] VARCHAR(50) NOT NULL, 
