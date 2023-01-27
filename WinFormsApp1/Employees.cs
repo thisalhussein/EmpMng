@@ -112,7 +112,7 @@ namespace WinFormsApp1
                 MessageBox.Show(Ex.Message);
             }
         }
-
+        int key =0;
         private void EmployeeList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
