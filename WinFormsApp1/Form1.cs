@@ -28,6 +28,8 @@ namespace WinFormsApp1
             else
             {
                 MessageBox.Show("Wrong UserName Or Password !");
+                UNameTb.Text = "";
+                PasswordTb.Text= "";
             }
         }
     }
