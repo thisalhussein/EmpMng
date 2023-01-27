@@ -37,13 +37,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.UpdateBtn = new System.Windows.Forms.Button();
+            this.AddBtn = new System.Windows.Forms.Button();
+            this.SalaryTb = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.PeriodTb = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.EmpCb = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.DaysTb = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -79,76 +79,76 @@
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             // 
-            // button2
+            // UpdateBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(195, 539);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(134, 41);
-            this.button2.TabIndex = 43;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
+            this.UpdateBtn.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.UpdateBtn.FlatAppearance.BorderSize = 0;
+            this.UpdateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UpdateBtn.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.UpdateBtn.ForeColor = System.Drawing.Color.White;
+            this.UpdateBtn.Location = new System.Drawing.Point(195, 539);
+            this.UpdateBtn.Name = "UpdateBtn";
+            this.UpdateBtn.Size = new System.Drawing.Size(134, 41);
+            this.UpdateBtn.TabIndex = 43;
+            this.UpdateBtn.Text = "Update";
+            this.UpdateBtn.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // AddBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(38, 539);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 41);
-            this.button1.TabIndex = 42;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
+            this.AddBtn.BackColor = System.Drawing.Color.RoyalBlue;
+            this.AddBtn.FlatAppearance.BorderSize = 0;
+            this.AddBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddBtn.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.AddBtn.ForeColor = System.Drawing.Color.White;
+            this.AddBtn.Location = new System.Drawing.Point(38, 539);
+            this.AddBtn.Name = "AddBtn";
+            this.AddBtn.Size = new System.Drawing.Size(134, 41);
+            this.AddBtn.TabIndex = 42;
+            this.AddBtn.Text = "Add";
+            this.AddBtn.UseVisualStyleBackColor = false;
             // 
-            // guna2DateTimePicker2
+            // SalaryTb
             // 
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.CustomizableEdges = customizableEdges5;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(38, 466);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(291, 37);
-            this.guna2DateTimePicker2.TabIndex = 41;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2023, 1, 27, 10, 50, 8, 963);
+            this.SalaryTb.Checked = true;
+            this.SalaryTb.CustomizableEdges = customizableEdges5;
+            this.SalaryTb.FillColor = System.Drawing.Color.White;
+            this.SalaryTb.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SalaryTb.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.SalaryTb.Location = new System.Drawing.Point(38, 466);
+            this.SalaryTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.SalaryTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.SalaryTb.Name = "SalaryTb";
+            this.SalaryTb.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            this.SalaryTb.Size = new System.Drawing.Size(291, 37);
+            this.SalaryTb.TabIndex = 41;
+            this.SalaryTb.Value = new System.DateTime(2023, 1, 27, 10, 50, 8, 963);
             // 
-            // guna2DateTimePicker1
+            // PeriodTb
             // 
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.CustomizableEdges = customizableEdges7;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(38, 377);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(291, 37);
-            this.guna2DateTimePicker1.TabIndex = 40;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2023, 1, 27, 10, 50, 8, 963);
+            this.PeriodTb.Checked = true;
+            this.PeriodTb.CustomizableEdges = customizableEdges7;
+            this.PeriodTb.FillColor = System.Drawing.Color.White;
+            this.PeriodTb.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PeriodTb.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.PeriodTb.Location = new System.Drawing.Point(38, 377);
+            this.PeriodTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.PeriodTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.PeriodTb.Name = "PeriodTb";
+            this.PeriodTb.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            this.PeriodTb.Size = new System.Drawing.Size(291, 37);
+            this.PeriodTb.TabIndex = 40;
+            this.PeriodTb.Value = new System.DateTime(2023, 1, 27, 10, 50, 8, 963);
             // 
-            // comboBox1
+            // EmpCb
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.EmpCb.FormattingEnabled = true;
+            this.EmpCb.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(38, 210);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(291, 36);
-            this.comboBox1.TabIndex = 37;
+            this.EmpCb.Location = new System.Drawing.Point(38, 210);
+            this.EmpCb.Name = "EmpCb";
+            this.EmpCb.Size = new System.Drawing.Size(291, 36);
+            this.EmpCb.TabIndex = 37;
             // 
             // panel2
             // 
@@ -159,12 +159,12 @@
             this.panel2.Size = new System.Drawing.Size(1364, 14);
             this.panel2.TabIndex = 36;
             // 
-            // textBox6
+            // DaysTb
             // 
-            this.textBox6.Location = new System.Drawing.Point(38, 294);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(291, 34);
-            this.textBox6.TabIndex = 34;
+            this.DaysTb.Location = new System.Drawing.Point(38, 294);
+            this.DaysTb.Name = "DaysTb";
+            this.DaysTb.Size = new System.Drawing.Size(291, 34);
+            this.DaysTb.TabIndex = 34;
             // 
             // label6
             // 
@@ -404,13 +404,13 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.guna2DateTimePicker2);
-            this.Controls.Add(this.guna2DateTimePicker1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.UpdateBtn);
+            this.Controls.Add(this.AddBtn);
+            this.Controls.Add(this.SalaryTb);
+            this.Controls.Add(this.PeriodTb);
+            this.Controls.Add(this.EmpCb);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.DaysTb);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
@@ -439,13 +439,13 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private Button button2;
-        private Button button1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private ComboBox comboBox1;
+        private Button UpdateBtn;
+        private Button AddBtn;
+        private Guna.UI2.WinForms.Guna2DateTimePicker SalaryTb;
+        private Guna.UI2.WinForms.Guna2DateTimePicker PeriodTb;
+        private ComboBox EmpCb;
         private Panel panel2;
-        private TextBox textBox6;
+        private TextBox DaysTb;
         private Label label6;
         private Label label5;
         private Label label3;
