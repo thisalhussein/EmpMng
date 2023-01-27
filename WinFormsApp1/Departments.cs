@@ -17,6 +17,7 @@ namespace WinFormsApp1
         {
             InitializeComponent();
             Con = new Functions();
+            ListerDepartments();
         }
 
         private void Departments_Load(object sender, EventArgs e)
