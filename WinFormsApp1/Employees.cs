@@ -143,7 +143,20 @@ namespace WinFormsApp1
         int key =0;
         private void EmployeeList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            EmpNameTb.Text = EmployeeList.SelectedRows[0].Cells[1].Value.ToString();
+            GenCb.Text = EmployeeList.SelectedRows[0].Cells[2].Value.ToString();
+            DepCb.SelectedValue = EmployeeList.SelectedRows[0].Cells[3].Value.ToString();
+            DOBTb.Text = EmployeeList.SelectedRows[0].Cells[4].Value.ToString();
+            JDateTb.Text = EmployeeList.SelectedRows[0].Cells[5].Value.ToString();
+            DailySalTb.Text = EmployeeList.SelectedRows[0].Cells[6].Value.ToString();
+            if (EmpNameTb.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(EmployeeList.SelectedRows[0].Cells[0].Value.ToString());
+            }
         }
     }
 }
