@@ -95,7 +95,7 @@ namespace WinFormsApp1
                 {
                     string Dep = DepNameTb.Text;
                     string Query = "Update DepartmentTbl set DepName = '{0}' whereDepId = { 1}";
-                Query = string.Format(Query, DepNameTb.Text, key);
+                    Query = string.Format(Query, DepNameTb.Text, key);
                     Con.SetData(Query);
                     ShowDepartments();
                     MessageBox.Show("Department Updated!!!");
