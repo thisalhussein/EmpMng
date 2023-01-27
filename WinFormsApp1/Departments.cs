@@ -187,7 +187,7 @@ namespace WinFormsApp1
             }
 
         }
-        private void DelBtn_Click_1(object sender, EventArgs e)
+        private void DelBtn_Click(object sender, EventArgs e)
         {
             {
                 try

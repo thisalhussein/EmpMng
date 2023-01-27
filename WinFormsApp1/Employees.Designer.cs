@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employees));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -51,8 +51,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.GenCb = new System.Windows.Forms.ComboBox();
             this.DepCb = new System.Windows.Forms.ComboBox();
-            this.DDBTb = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.JDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.DOBTb = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.JDateTb = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.AddBtn = new System.Windows.Forms.Button();
             this.UpdateBtn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -237,37 +237,37 @@
             this.DepCb.Size = new System.Drawing.Size(291, 36);
             this.DepCb.TabIndex = 20;
             // 
-            // DDBTb
+            // DOBTb
             // 
-            this.DDBTb.Checked = true;
-            this.DDBTb.CustomizableEdges = customizableEdges1;
-            this.DDBTb.FillColor = System.Drawing.Color.White;
-            this.DDBTb.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DDBTb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DDBTb.Location = new System.Drawing.Point(38, 468);
-            this.DDBTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.DDBTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.DDBTb.Name = "DDBTb";
-            this.DDBTb.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            this.DDBTb.Size = new System.Drawing.Size(291, 37);
-            this.DDBTb.TabIndex = 22;
-            this.DDBTb.Value = new System.DateTime(2023, 1, 27, 10, 50, 8, 963);
+            this.DOBTb.Checked = true;
+            this.DOBTb.CustomizableEdges = customizableEdges5;
+            this.DOBTb.FillColor = System.Drawing.Color.White;
+            this.DOBTb.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DOBTb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DOBTb.Location = new System.Drawing.Point(38, 468);
+            this.DOBTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DOBTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DOBTb.Name = "DOBTb";
+            this.DOBTb.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            this.DOBTb.Size = new System.Drawing.Size(291, 37);
+            this.DOBTb.TabIndex = 22;
+            this.DOBTb.Value = new System.DateTime(2023, 1, 27, 10, 50, 8, 963);
             // 
-            // JDate
+            // JDateTb
             // 
-            this.JDate.Checked = true;
-            this.JDate.CustomizableEdges = customizableEdges3;
-            this.JDate.FillColor = System.Drawing.Color.White;
-            this.JDate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.JDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.JDate.Location = new System.Drawing.Point(38, 557);
-            this.JDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.JDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.JDate.Name = "JDate";
-            this.JDate.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            this.JDate.Size = new System.Drawing.Size(291, 37);
-            this.JDate.TabIndex = 23;
-            this.JDate.Value = new System.DateTime(2023, 1, 27, 10, 50, 8, 963);
+            this.JDateTb.Checked = true;
+            this.JDateTb.CustomizableEdges = customizableEdges7;
+            this.JDateTb.FillColor = System.Drawing.Color.White;
+            this.JDateTb.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.JDateTb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.JDateTb.Location = new System.Drawing.Point(38, 557);
+            this.JDateTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.JDateTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.JDateTb.Name = "JDateTb";
+            this.JDateTb.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            this.JDateTb.Size = new System.Drawing.Size(291, 37);
+            this.JDateTb.TabIndex = 23;
+            this.JDateTb.Value = new System.DateTime(2023, 1, 27, 10, 50, 8, 963);
             // 
             // AddBtn
             // 
@@ -388,27 +388,27 @@
             // 
             // EmployeeList
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.EmployeeList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.EmployeeList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.EmployeeList.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.EmployeeList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.EmployeeList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.EmployeeList.ColumnHeadersHeight = 4;
             this.EmployeeList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.EmployeeList.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.EmployeeList.DefaultCellStyle = dataGridViewCellStyle6;
             this.EmployeeList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.EmployeeList.Location = new System.Drawing.Point(477, 258);
             this.EmployeeList.Name = "EmployeeList";
@@ -456,8 +456,8 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.UpdateBtn);
             this.Controls.Add(this.AddBtn);
-            this.Controls.Add(this.JDate);
-            this.Controls.Add(this.DDBTb);
+            this.Controls.Add(this.JDateTb);
+            this.Controls.Add(this.DOBTb);
             this.Controls.Add(this.DepCb);
             this.Controls.Add(this.GenCb);
             this.Controls.Add(this.panel2);
@@ -507,8 +507,8 @@
         private Panel panel2;
         private ComboBox GenCb;
         private ComboBox DepCb;
-        private Guna.UI2.WinForms.Guna2DateTimePicker DDBTb;
-        private Guna.UI2.WinForms.Guna2DateTimePicker JDate;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DOBTb;
+        private Guna.UI2.WinForms.Guna2DateTimePicker JDateTb;
         private Button AddBtn;
         private Button UpdateBtn;
         private PictureBox pictureBox1;
