@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[Table]
 (
 	[DepId] INT NOT NULL PRIMARY KEY, 
-    [DepName] NCHAR(10) NULL
+    [DepName] NCHAR(100) NULL
 )
