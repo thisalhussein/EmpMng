@@ -174,5 +174,12 @@ namespace WinFormsApp1
             Obj.Show();
             this.Hide();
         }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+            Form1 Obj = new Form1();
+            Obj.Show();
+            this.Hide();
+        }
     }
 }
