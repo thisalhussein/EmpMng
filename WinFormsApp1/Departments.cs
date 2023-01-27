@@ -213,6 +213,11 @@ namespace WinFormsApp1
             this.Hide();
         }
 
-
+        private void SalaryLbl_Click(object sender, EventArgs e)
+        {
+            Salary obj = new Salary();
+            obj.Show();
+            this.Hide();
+        }
     }
 }

@@ -30,6 +30,7 @@ namespace WinFormsApp1
             EmpCb.DataSource = Con.GetData(Query);
 
         }
+        int d = 1;
         int DSal = 0;
         string Period = "";
         private void GetSalary()
@@ -75,7 +76,7 @@ namespace WinFormsApp1
         {
             GetSalary();
         }
-        int d = 1;
+        
         private void AddBtn_Click(object sender, EventArgs e)
         {
             try

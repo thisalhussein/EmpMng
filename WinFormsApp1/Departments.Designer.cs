@@ -41,8 +41,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LogoutLbl = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.EmpLbl = new System.Windows.Forms.Label();
@@ -51,13 +49,15 @@
             this.DelBtn1 = new System.Windows.Forms.Button();
             this.EditBtn = new System.Windows.Forms.Button();
             this.DepNameTb = new System.Windows.Forms.TextBox();
+            this.SalaryLbl = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DepList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // AddBtn
@@ -168,29 +168,6 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 50;
             this.pictureBox5.TabStop = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label11.Location = new System.Drawing.Point(975, 153);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(61, 22);
-            this.label11.TabIndex = 49;
-            this.label11.Text = "Salary";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(892, 138);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(77, 50);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 48;
-            this.pictureBox4.TabStop = false;
             // 
             // label10
             // 
@@ -328,20 +305,43 @@
             this.DepNameTb.Size = new System.Drawing.Size(291, 34);
             this.DepNameTb.TabIndex = 57;
             // 
+            // SalaryLbl
+            // 
+            this.SalaryLbl.AutoSize = true;
+            this.SalaryLbl.BackColor = System.Drawing.Color.White;
+            this.SalaryLbl.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.SalaryLbl.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.SalaryLbl.Location = new System.Drawing.Point(985, 153);
+            this.SalaryLbl.Name = "SalaryLbl";
+            this.SalaryLbl.Size = new System.Drawing.Size(61, 22);
+            this.SalaryLbl.TabIndex = 59;
+            this.SalaryLbl.Text = "Salary";
+            this.SalaryLbl.Click += new System.EventHandler(this.SalaryLbl_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(902, 138);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(77, 50);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 58;
+            this.pictureBox6.TabStop = false;
+            // 
             // Departments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1364, 774);
+            this.Controls.Add(this.SalaryLbl);
+            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.DepNameTb);
             this.Controls.Add(this.EditBtn);
             this.Controls.Add(this.DelBtn1);
             this.Controls.Add(this.DepList);
             this.Controls.Add(this.LogoutLbl);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.EmpLbl);
@@ -362,10 +362,10 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DepList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -381,8 +381,6 @@
         private PictureBox pictureBox1;
         private Label LogoutLbl;
         private PictureBox pictureBox5;
-        private Label label11;
-        private PictureBox pictureBox4;
         private Label label10;
         private PictureBox pictureBox3;
         private Label EmpLbl;
@@ -391,5 +389,7 @@
         private Button DelBtn1;
         private Button EditBtn;
         private TextBox DepNameTb;
+        private Label SalaryLbl;
+        private PictureBox pictureBox6;
     }
 }
