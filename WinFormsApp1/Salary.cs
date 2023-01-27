@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace WinFormsApp1
 {
+
     public partial class Salary : Form
     {
         public Salary()
         {
             InitializeComponent();
+            Con = new Functions();
+            ShowEmp();
+            GetDepartment()
+        }
+
+        private void SalaryList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
