@@ -21,7 +21,20 @@ namespace WinFormsApp1
             ShowEmp();
             GetDepartment()
         }
+        private void ShowEmp()
+        {
 
+            try
+            {
+                string Query = "Select * from EmployeeTbl";
+                EmployeeList.DataSource = Con.GetData(Query);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+        }
         private void SalaryList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
