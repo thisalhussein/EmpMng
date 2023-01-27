@@ -19,15 +19,15 @@ namespace WinFormsApp1
             InitializeComponent();
             Con = new Functions();
             ShowSalary();
-            GetEmployee()
+            GetEmployees()
         }
         private void ShowSalary()
         {
 
             try
             {
-                string Query = "Select * from EmployeeTbl";
-                EmployeeList.DataSource = Con.GetData(Query);
+                string Query = "Select * from SalaryTbl";
+                SalaryList.DataSource = Con.GetData(Query);
             }
             catch (Exception)
             {
